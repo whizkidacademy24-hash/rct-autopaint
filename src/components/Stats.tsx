@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
+import { asset } from '../lib/asset'
 
 interface StatItem { value: number; suffix: string; label: string; sub: string }
 
@@ -113,7 +114,7 @@ export default function Stats() {
             <span className="text-text-primary">Mabilis. Maayos. Gumawa."</span>
           </p>
           <div className="flex items-center gap-4">
-            <img src="/logo.png" alt="RCT Autopaint" className="w-14 h-14 rounded-full" />
+            <img src={asset('/logo.png')} alt="RCT Autopaint" className="w-14 h-14 rounded-full" />
             <div>
               <p className="text-sm font-medium text-text-primary">RCT Autopaint</p>
               <p className="text-xs text-muted">480-B Magsalin St, Taguig City</p>
