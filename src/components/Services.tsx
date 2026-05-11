@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import { asset } from '../lib/asset'
 
 /* ── per-card cycling image hook ── */
 function useCycle(imgs: string[], interval = 3000) {
@@ -37,12 +38,12 @@ const SERVICES = [
     subtitle: 'Precision Body Repair',
     desc: 'Expert removal of dents, dings and deep scratches with seamless colour-matched repainting. From minor door dings to major panel damage — restored to factory condition.',
     imgs: [
-      '/dent-repair-ba.jpg',   // close before/after hood dent
-      '/puller.jpg',            // dent puller machine in action
-      '/dent-work.jpg',         // technician with hammer & sander
-      '/body-damage.jpg',       // two techs repairing body panel
-      '/stud-welder.jpg',       // stud welder on white car
-      '/img2.jpg',              // RAV4 side dent before/after
+      asset('/dent-repair-ba.jpg'),
+      asset('/puller.jpg'),
+      asset('/dent-work.jpg'),
+      asset('/body-damage.jpg'),
+      asset('/stud-welder.jpg'),
+      asset('/img2.jpg'),
     ],
     col: 'md:col-span-7',
     h: 'h-[300px] md:h-[380px]',
@@ -54,12 +55,12 @@ const SERVICES = [
     subtitle: 'Complete Respray',
     desc: 'Strip, sand, prime and a flawless topcoat that lasts. Complete exterior respray from prep to final clear coat — showroom finish guaranteed.',
     imgs: [
-      '/spray-red-booth.jpg',    // tech spraying red car in booth
-      '/spray-gun-kneeling.jpg', // tech kneeling spraying
-      '/custom-fullpaint.jpg',   // tech spraying colorful custom car
-      '/spray-car.jpg',          // blue car in booth
-      '/img4.png',               // original booth photo
-      '/paint-mixing.jpg',       // black paint mixing
+      asset('/spray-red-booth.jpg'),
+      asset('/spray-gun-kneeling.jpg'),
+      asset('/custom-fullpaint.jpg'),
+      asset('/spray-car.jpg'),
+      asset('/img4.png'),
+      asset('/paint-mixing.jpg'),
     ],
     col: 'md:col-span-5',
     h: 'h-[300px] md:h-[380px]',
@@ -72,8 +73,8 @@ const SERVICES = [
     subtitle: 'Underbody Protection',
     desc: 'Heavy-duty rubberized undercoating applied to your chassis — protecting against rust, corrosion, road noise and moisture damage from the ground up.',
     imgs: [
-      '/undercoating.jpg',  // mechanic with yellow helmet undercoating
-      '/undercoat.jpg',     // tech in suit spraying undercarriage
+      asset('/undercoating.jpg'),
+      asset('/undercoat.jpg'),
     ],
     col: 'md:col-span-5',
     h: 'h-[300px] md:h-[380px]',
@@ -85,10 +86,10 @@ const SERVICES = [
     subtitle: 'Full Color Transformation',
     desc: 'Complete identity change. Choose from 500+ OEM & custom shades — matte, gloss, satin or metallic. Your car, your color.',
     imgs: [
-      '/change-color1.jpg',   // Porsche silver → blue split
-      '/change-color.jpg',    // Infiniti white → red
-      '/change-color2.jpg',   // tech spraying red car close-up
-      '/metalflake-paint.jpg',// red metalflake paint pour
+      asset('/change-color1.jpg'),
+      asset('/change-color.jpg'),
+      asset('/change-color2.jpg'),
+      asset('/metalflake-paint.jpg'),
     ],
     col: 'md:col-span-7',
     h: 'h-[300px] md:h-[380px]',

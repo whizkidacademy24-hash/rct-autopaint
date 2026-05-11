@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { asset } from '../lib/asset'
 
 const FB_PAGE = 'https://www.facebook.com/RCTCarPaintingTaguig'
 const FB_REVIEWS_URL = 'https://www.facebook.com/RCTCarPaintingTaguig/reviews'
@@ -128,7 +129,7 @@ export default function Reviews() {
           transition={{ duration: 0.9 }}
         >
           <img
-            src="/rct-flyer.png"
+            src={asset('/rct-flyer.png')}
             alt="RCT CAR Painting Services"
             className="w-full object-cover object-center max-h-[260px] md:max-h-[340px] transition-transform duration-700 group-hover:scale-[1.02]"
           />

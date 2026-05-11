@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import gsap from 'gsap'
+import { asset } from '../lib/asset'
 
 const SOCIALS = [
   { label: 'Facebook',  href: 'https://www.facebook.com/RCTCarPaintingTaguig' },
@@ -45,7 +46,7 @@ export default function Contact() {
 
       {/* ── Background image ── */}
       <div className="absolute inset-0 z-0">
-        <img src="/img4.png" alt="" className="w-full h-full object-cover" />
+        <img src={asset('/img4.png')} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/70" />
         <div className="absolute inset-0 bg-gradient-to-b from-bg via-transparent to-bg" />
       </div>
@@ -130,7 +131,7 @@ export default function Contact() {
               ) : (
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                   <div className="flex items-center gap-3 mb-2">
-                    <img src="/logo.png" alt="RCT" className="w-10 h-10 rounded-full" />
+                    <img src={asset('/logo.png')} alt="RCT" className="w-10 h-10 rounded-full" />
                     <div>
                       <p className="text-sm font-medium text-text-primary">Free Quote Request</p>
                       <p className="text-xs text-muted">Reply within 24 hours</p>
@@ -213,7 +214,7 @@ export default function Contact() {
 
             {/* brand */}
             <div className="flex items-center gap-4">
-              <img src="/logo.png" alt="RCT Autopaint" className="w-10 h-10 rounded-full" />
+              <img src={asset('/logo.png')} alt="RCT Autopaint" className="w-10 h-10 rounded-full" />
               <div>
                 <p className="text-sm font-medium text-text-primary">RCT Autopaint</p>
                 <p className="text-xs text-muted">Car Painting Services</p>

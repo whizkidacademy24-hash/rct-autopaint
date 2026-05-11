@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion'
+import { asset } from '../lib/asset'
 
 const WORK = [
   {
     title: 'Full Front-End Collision Repair',
     type: 'Full Body Repair',
     desc: 'Complete structural and cosmetic restoration after major front impact. Panel beating, alignment and full respray.',
-    img: '/img1.jpg',
+    img: asset('/img1.jpg'),
     date: 'Apr 2026',
     time: '3 day job',
   },
@@ -13,7 +14,7 @@ const WORK = [
     title: 'Hood Dent — Before & After',
     type: 'Dent Repair',
     desc: 'Precision paintless dent removal on hood panel. Completely unnoticeable after repair — no repainting needed.',
-    img: '/dent-repair-ba.jpg',
+    img: asset('/dent-repair-ba.jpg'),
     date: 'Mar 2026',
     time: '½ day job',
   },
@@ -21,7 +22,7 @@ const WORK = [
     title: 'Side Panel Dent Removal',
     type: 'Dent & Repaint',
     desc: 'Large door panel dent removed and colour-matched respray on Toyota RAV4. Looks brand new.',
-    img: '/img2.jpg',
+    img: asset('/img2.jpg'),
     date: 'Mar 2026',
     time: '1 day job',
   },
@@ -29,7 +30,7 @@ const WORK = [
     title: 'Color Change — Silver to Blue',
     type: 'Change Color',
     desc: 'Porsche 911 full color transformation from silver to deep electric blue. Flawless gloss finish.',
-    img: '/change-color1.jpg',
+    img: asset('/change-color1.jpg'),
     date: 'Feb 2026',
     time: '4 day job',
   },
@@ -37,7 +38,7 @@ const WORK = [
     title: 'Color Change — White to Red',
     type: 'Change Color',
     desc: 'Complete exterior color change from pearl white to candy red. Every panel resprayed to match.',
-    img: '/change-color.jpg',
+    img: asset('/change-color.jpg'),
     date: 'Jan 2026',
     time: '3 day job',
   },
@@ -45,7 +46,7 @@ const WORK = [
     title: 'Full Body Respray in Paint Booth',
     type: 'Full Body Repaint',
     desc: 'Complete exterior respray in professional spray booth. Prep, prime, colour coat and clear coat.',
-    img: '/spray-red-booth.jpg',
+    img: asset('/spray-red-booth.jpg'),
     date: 'Jan 2026',
     time: '4 day job',
   },

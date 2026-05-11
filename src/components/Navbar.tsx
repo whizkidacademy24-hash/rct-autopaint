@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
+import { asset } from '../lib/asset'
 
 const LINKS = [
   { label: 'Home',     href: '#home' },
@@ -53,7 +54,7 @@ export default function Navbar() {
           <span className="absolute inset-[-2px] rounded-full accent-gradient opacity-80" />
           {/* inner */}
           <span className="relative w-full h-full rounded-full bg-bg flex items-center justify-center z-10">
-            <img src="/logo.png" alt="RCT" className="w-7 h-7 rounded-full object-cover" />
+            <img src={asset('/logo.png')} alt="RCT" className="w-7 h-7 rounded-full object-cover" />
           </span>
         </motion.button>
 

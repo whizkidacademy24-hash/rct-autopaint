@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
+import { asset } from '../lib/asset'
 
-const VIDEOS = ['/hero-bg.mp4', '/hero-2.mp4']
+const VIDEOS = [asset('/hero-bg.mp4'), asset('/hero-2.mp4')]
 const ROLES  = ['Restore', 'Repaint', 'Revive', 'Renew']
 
 export default function Hero() {
